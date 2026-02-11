@@ -53,11 +53,16 @@ def fetch_pokemon(pokemon_name):
     else:
         print(f"❌ Could not find {pokemon_name}")
 
-# --- LET'S START ---
-fetch_pokemon("pikachu")
-fetch_pokemon("eevee")
-fetch_pokemon("charmander")
-fetch_pokemon("jigglypuff") # The singer!
+# --- NEW: AUTOMATIC CATCHER ---
+print("🚀 STARTING BULK COLLECTION (Gen 1)...")
 
-print("\n✨ All Pokémon caught and saved to SQL database!")
+# This loop runs from ID 1 to 50 (Bulbasaur to Diglett)
+for i in range(1, 51):
+    try:
+        # We can pass the ID number (i) directly!
+        fetch_pokemon(i) 
+    except Exception as e:
+        print(f"⚠️ Skipped ID {i}: {e}")
+
+print("\n✨ Mission Complete! You now have 50 Pokémon in your SQL Database.")
 conn.close()
