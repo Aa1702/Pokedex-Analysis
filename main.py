@@ -20,12 +20,14 @@ cry_url TEXT
 conn.commit()
 
 # --- FETCH DATA ---
-def fetch_pokemon(pokemon_name):
-    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}"
+def fetch_pokemon(pokemon_input):
+    url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_input}"
     response = requests.get(url)
     
     if response.status_code == 200:
         data = response.json()
+        
+        real_name = data['name']
         
         # Extracting the "Powers" (Stats)
         stats = {stat['stat']['name']: stat['base_stat'] for stat in data['stats']}
@@ -37,7 +39,7 @@ def fetch_pokemon(pokemon_name):
         # Extracting Type
         type_1 = data['types'][0]['type']['name']
 
-        print(f"⚡ Catching {pokemon_name}...")
+        print(f"⚡ Catching {real_name}...")
         print(f"   - Type: {type_1}")
         print(f"   - Attack: {stats['attack']}")
         print(f"   - Voice: {cry_url}")
@@ -47,11 +49,11 @@ def fetch_pokemon(pokemon_name):
         cursor.execute("""
             INSERT OR REPLACE INTO pokemon (id, name, type_1, hp, attack, defense, speed, cry_url)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """, (data['id'], pokemon_name, type_1, stats['hp'], stats['attack'], stats['defense'], stats['speed'], cry_url))
+        """, (data['id'], real_name, type_1, stats['hp'], stats['attack'], stats['defense'], stats['speed'], cry_url))
         
         conn.commit()
     else:
-        print(f"❌ Could not find {pokemon_name}")
+        print(f"❌ Could not find {real_name}")
 
 # --- NEW: AUTOMATIC CATCHER ---
 print("🚀 STARTING BULK COLLECTION (Gen 1)...")

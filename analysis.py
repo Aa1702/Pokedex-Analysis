@@ -21,3 +21,7 @@ print("\n💪 THE STRONGEST POKEMON IS:")
 print(f"Name: {strongest['name'].title()}")
 print(f"Attack: {strongest['attack']}")
 print(f"Type: {strongest['type_1']}")
+print(f"HP: {strongest['hp']}")
+print(f"Defense: {strongest['defense']}")
+print(f"Speed: {strongest['speed']}")
+
