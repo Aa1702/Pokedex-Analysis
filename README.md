@@ -71,13 +71,14 @@ Dragonite really said main character energy.
 
 ---
 
-## 3. 🌷 Static Visualisations (`visualise.py`)
-
+## 3.🌷 Static Visualisations (visualise.py)
 Before launching the app, the system generates Spring-themed stat charts using Matplotlib & Seaborn. Soft palette. Clean layout. No clutter. Just vibes. 🌸
 
-     🌸 Strongest Buds (Attack)	🌿 Tough Sprouts (Defense)	🌬 Zippy Friends (Speed)
-<img src="images/strongest_pokemons.png" width="30%">	<img src="images/defense_pokemons.png" width="30%">	<img src="images/Fastest_pokemons.png" width="30%">
-<imgsrc="images/Fastest_pokemons.png" width="100%"> 
+![🌸 Strongest Buds](images/strongest_pokemons.png)
+
+![🌿 Tough Sprouts](images/defense_pokemons.png)
+
+![🌬 Zippy Friends](images/Fastest_pokemons.png)
 
 Run the visualisation script:
 
