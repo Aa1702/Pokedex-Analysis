@@ -1,4 +1,3 @@
-
 # ☁️✨ Pokédex-Analysis ✨☁️
 
 <p align="center">
@@ -114,7 +113,11 @@ streamlit run app.py
 ## 6. 🎥 Dashboard Preview
 
 One clean recording. Smooth transitions. All stat tabs shown.
-![Dashboard](images/dashboard_demo.mp4)
+
+
+
+https://github.com/user-attachments/assets/ce3ff49e-f210-4d19-96af-50660bb6b056
+
 
 ---
 
