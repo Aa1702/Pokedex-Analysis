@@ -114,14 +114,7 @@ streamlit run app.py
 ## 6. 🎥 Dashboard Preview
 
 One clean recording. Smooth transitions. All stat tabs shown.
-
-<p align="center">
-  <video width="100%" controls>
-    <source src="images/dashboard_demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
+![Dashboard](images/dashboard_demo.mp4)
 
 ---
 
