@@ -1,4 +1,4 @@
-                                                                         # ☁️✨ Pokédex-Analysis ✨☁️
+# ☁️✨ Pokédex-Analysis ✨☁️
 
 <p align="center">
   <img src="images/title.png" width="750" alt="Sky Pokedex Banner">
