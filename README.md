@@ -76,7 +76,7 @@ Dragonite really said main character energy.
 Before launching the app, the system generates Spring-themed stat charts using Matplotlib & Seaborn. Soft palette. Clean layout. No clutter. Just vibes. 🌸
 
      🌸 Strongest Buds (Attack)	🌿 Tough Sprouts (Defense)	🌬 Zippy Friends (Speed)
-<img src="images/strongest_pokemons.png" width="100%">	<img src="images/defense_pokemons.png" width="100%">	<img src="images/Fastest_pokemons.png" width="100%">
+<img src="images/strongest_pokemons.png" width="30%">	<img src="images/defense_pokemons.png" width="30%">	<img src="images/Fastest_pokemons.png" width="30%">
 <imgsrc="images/Fastest_pokemons.png" width="100%"> 
 
 Run the visualisation script:
