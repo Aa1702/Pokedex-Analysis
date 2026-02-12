@@ -15,6 +15,8 @@
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit">
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Seaborn-77ACF1?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn">
 </p>
 
 ---
@@ -50,7 +52,7 @@ python main.py
 
 ---
 
-## 2. 💪 Data Analysis (analyse.py)
+## 2. 💪 Data Analysis (`analyse.py`)
 
 The script loads the database to perform quick queries, such as identifying the strongest Pokémon based on Attack stats.
 
@@ -69,13 +71,15 @@ Dragonite really said main character energy.
 
 ---
 
-## 3. 🌷 Static Visualisations (visualise.py)
+## 3. 🌷 Static Visualisations (`visualise.py`)
 
 Before launching the app, the system generates Spring-themed stat charts using Matplotlib & Seaborn. Soft palette. Clean layout. No clutter. Just vibes. 🌸
 
-🌸 Strongest Buds (Attack)	🌿 Tough Sprouts (Defense)	🌬 Zippy Friends (Speed)
+ 🌸 Strongest Buds (Attack)		
 <img src="images/strongest_pokemons.png" width="250">	
+🌿 Tough Sprouts (Defense)
 <img src="images/defense_pokemons.png" width="250">	
+🌬 Zippy Friends (Speed)
 <img src="images/Fastest_pokemons.png" width="250">
 
 Run the visualisation script:
@@ -85,7 +89,7 @@ python visualise.py
 ```
 ---
 
-## 4. 🎮 Interactive Dashboard (app.py)
+## 4. 🎮 Interactive Dashboard (`app.py`)
 This is where things get ✨ alive ✨. The dashboard is built with Streamlit, injected with custom HTML/CSS/JS to break out of the standard data frame look.
 
 ✨ Features
@@ -113,7 +117,13 @@ streamlit run app.py
 
 One clean recording. Smooth transitions. All stat tabs shown.
 
-<p align="center"> <img src="images/dashboard_demo.gif" width="100%" alt="Dashboard Demo"> </p>
+<p align="center">
+  <video width="100%" controls>
+    <source src="images/dashboard_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 
 ---
 
@@ -172,7 +182,7 @@ Data → Storage → Analysis → Visualisation → Interaction.
 
 ---
 
-## 11. 🚀 Future Enhancements
+## 10. 🚀 Future Enhancements
 [ ] 🔍 Add Pokémon search bar
 
 [ ] 🎭 Filter by specific Types
